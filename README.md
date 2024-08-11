@@ -1,8 +1,3 @@
-<head>
-  <script type="text/javascript" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
-</head>
 # Software code for
 ## APPLICATION OF LIMIT STATE FUNCTION METHOD TO STATISITCAL ANALYSIS OF BALLISTIC PENETRATION   
                                           Shinsuke SAKAI (Yokohama National University, Japan)   
@@ -94,9 +89,7 @@ data={"b":{"mean":4/1000,"cov":0.01,"dist":"normal"},
 "formula": ’BRL’}
 ```
 BRL formula is shown below.
-$$
-v_{bl}=\alpha_7 \cdot 10^4 \frac{(bd)^{0.75}}{\sqrt{m}},   \alpha_7=5.37
-$$
+![v_{bl}=\alpha_7 \cdot 10^4 \frac{(bd)^{0.75}}{\sqrt{m}},   \alpha_7=5.37](https://latex.codecogs.com/png.latex?E%3Dmc%5E2)
 #### Symbols
 |Symbol | Contents |
 |:---:| :--- |
