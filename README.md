@@ -1,13 +1,8 @@
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-<script type="text/x-mathjax-config">
- MathJax.Hub.Config({
- tex2jax: {
- inlineMath: [['$', '$'] ],
- displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
- }
- });
-</script>
+<head>
+  <script type="text/javascript" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
 # Software code for
 ## APPLICATION OF LIMIT STATE FUNCTION METHOD TO STATISITCAL ANALYSIS OF BALLISTIC PENETRATION   
                                           Shinsuke SAKAI (Yokohama National University, Japan)   
