@@ -89,7 +89,7 @@ data={"b":{"mean":4/1000,"cov":0.01,"dist":"normal"},
 "formula": ’BRL’}
 ```
 BRL formula is shown below.   
-![BRL Formula](BRL.png)
+$v_{bl}=\alpha_7 \cdot 10^4 \frac{(bd)^{0.75}}{\sqrt{m}},   \alpha_7=5.37$
 
 
 #### Symbols
