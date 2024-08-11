@@ -88,8 +88,10 @@ data={"b":{"mean":4/1000,"cov":0.01,"dist":"normal"},
 "Title": ’Example for BRL’,
 "formula": ’BRL’}
 ```
-BRL formula is shown below.
-![v_{bl}=\alpha_7 \cdot 10^4 \frac{(bd)^{0.75}}{\sqrt{m}},   \alpha_7=5.37](https://latex.codecogs.com/png.latex?E%3Dmc%5E2)
+BRL formula is shown below.   
+![BRL Formula](BRL.png)
+
+
 #### Symbols
 |Symbol | Contents |
 |:---:| :--- |
