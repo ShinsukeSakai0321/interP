@@ -195,3 +195,41 @@ Windows software interP.exe will be created by using pyinstaller. After installi
 Creation takes an enormous amount of time, and the size of interP.exe becomes extremely large. It is recommended to use a PYTHON program for the analysis instead of interP.exe. The details of pyinstaller is shown in the follwing site.   
 [Pyinstaller Manual](https://pyinstaller.org/en/stable/)
 
+### Example of drawing contour map
+
+```python
+import Penetration as pn
+import matplotlib.pyplot as plt
+import numpy as np
+data={"b":{"mean":4/1000,"cov":0.01,"dist":"normal"},
+     "d":{"mean":0.02,"cov":0.01,"dist":"normal"},
+     "m":{"mean":0.197,"cov":0.01,"dist":"normal"},
+     "v":{"mean":150,"cov":0.1,"dist":"normal"},
+     "Limp":{"mean":0.08},
+     "Lsh":{"mean":0.5},
+     "Su":{"mean":490e6*1.2},     
+      'Me': {'mean': 1.1, 'cov': 0.05, 'dist': 'normal'},
+      'Title': 'Example for BRL',
+      'formula': 'BRL'}
+brl=pn.BRL()#Generation of instance
+
+# Setting the range of variables and the number of division
+cdata={'b':{'min':4/1000,'max':25/1000,'div':100},
+      'm':{'min':0.1,'max':0.3,'div':100}}
+key=list(cdata.keys())
+B,M,Z=brl.MakeContour(data,cdata)
+
+plt.pcolormesh(B, M, Z[1], cmap='hsv')
+plt.title('Reliability index')
+pp=plt.colorbar (orientation="vertical") # setting colorbar  
+plt.xlabel(key[0], fontsize=20)
+plt.ylabel(key[1], fontsize=20)
+plt.subplots_adjust(left=0.2,bottom=0.2)
+# drawing contour map
+contour=plt.contour(B, M, Z[1], colors='k', linewidths=0.5)
+# expressing numerical values on contour line
+plt.clabel(contour, inline=True, fontsize=8)
+```
+
+You will get the following contour map of reliability index.
+![Contour map](contour.png)
