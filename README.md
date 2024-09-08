@@ -7,7 +7,7 @@
 1. Whenever a package is reported as missing, install it using the pip command in the terminal  
 
 ###  Procedure
-1. Download all contents in this repository   
+1. Download all contents in this repository (Example programs are shown in InterPenet.ipynb)  
 1. Move to the Downloads folder   
 1. Execute the following program for BRL example in the Jupyter code window   
 ```python
@@ -35,6 +35,7 @@ File= BRL.pkl
 #### Contents
 |File name | Contents |
 |:---| :--- |
+|InterPenet.ipynb|Example programs|
 |InterPenet.py|Package for the penetration analysis|
 |LimitState.py|Package for limit state function method|
 |AlyLi.pkl|Example data for Aly and Li Formula|
